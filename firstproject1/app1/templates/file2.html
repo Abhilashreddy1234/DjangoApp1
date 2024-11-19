@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+{% block title %}
+GVR OLYMPICS-Members
+{% endblock %}
+{% block content %}
+<div class="mycard">
+<h1>Members</h1>
+  <ul>
+  {% for x in mymembers %}
+    <li onclick="window.location='details/{{x.id}}'">{{ x.fname }} {{ x.lname }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
+</body>
+<html>

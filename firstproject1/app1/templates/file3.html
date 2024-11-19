@@ -1,0 +1,13 @@
+{% extends "master.html" %}
+{% block title %}
+DETAILS{{ mymember.fname}} {{mymember.lname}}
+{% endblock %}
+{% block content %}
+<div class="mycard">
+    <h1>{{mymembers.fname}}{{mymembers.lname}}</h1>
+    <p>phone:{{mymembers.phone}}</p>
+    <p>Member Since:{{mymembers.joined_date}}</p>
+    <p>Record id:{{mymembers.record_id}}
+    <p>Back to<a href="/app1">Members</a></p>
+</div>
+{% endblock %}

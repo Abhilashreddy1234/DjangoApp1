@@ -1,0 +1,15 @@
+<table border='1'>
+    <tr>
+      <th>id</th>
+      <th>fname</th>
+      <th>lname</th>
+    </tr>
+    {% for x in mymembers %}
+      <tr>
+        <td>{{ x.id }}</td>
+          <td>{{ x.fname }}</td>
+        <td>{{ x.lname }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+  
